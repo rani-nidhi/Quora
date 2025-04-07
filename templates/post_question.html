@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Ask a Question</h2>
+<form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" name="title" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="description" class="form-control" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Post</button>
+</form>
+{% endblock %}

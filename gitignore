@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Django
+db.sqlite3
+.env
+
+# VSCode
+.vscode/
+
+# Git
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# OS
+.DS_Store
+
+# Migrations (optional if you want to ignore them)
+**/migrations/*.pyc
+**/migrations/__pycache__/
