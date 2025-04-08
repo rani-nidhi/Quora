@@ -21,5 +21,5 @@ class Answer(models.Model):
     likes = models.ManyToManyField(User, related_name='liked_answers', blank=True)
 
     def __str__(self):
-        return f"{self.user.username}'s answer to '{self.question.title}'"
+        return f"{self.user.username} - {self.question.title}"
 
